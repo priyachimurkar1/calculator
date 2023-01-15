@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <input id="x" type="number" /> + <input id="y" type="number" /> <button id="btn">Add</button>
+    <div id="root"></div>
+    <script>
+        document.getElementById('btn').onclick = () => {
+            var x = parseInt(document.getElementById('x').value);
+            var y = parseInt(document.getElementById('y').value);
+            document.getElementById('root').innerText=x+y;
+        }
+    </script>
+</body>
+
+</html>
